@@ -1,6 +1,6 @@
 Develop a HTTP microservice called number-management-service that exposes a GET REST API "/numbers". This API receives a list of URLs through query parameters. This query param is called "url". It can appear more than once, for example:
 
-http://yourappserver:port/numbers?url=http://something.com/primes&url=http://anything.com/fibo
+http://localhost:port/numbers?url=http://something.com/primes&url=http://anything.com/fibo
 
 When API /numbers is called, your service shall retrieve each of these URLs if they turn out to be syntactically valid URLs. Each URL will return a JSON data structure that looks like this:
 
