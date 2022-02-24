@@ -37,7 +37,7 @@ For your convenience, we are giving you a test server which exposes APIs like
 /rand
 ```
 
-baseURL: http://localhost:8090
+BaseURL: http://localhost:8090
 
 If you have golang installed on your system, following command will help you run this test server
 
@@ -45,3 +45,16 @@ If you have golang installed on your system, following command will help you run
 cd problem1
 go run testserver.go
 ```
+
+Test Case:
+
+http://localhost:port/numbers?url=http://localhost:8090/primes&url=http://localhost:8090/fibo&url=http://localhost:8090/odd
+
+Expected Output:
+
+```json
+{
+    "numbers": [1, 2, 3, 5, 7, 8, 9, 11, 13, 15, 17, 19, 21, 23]
+}
+```
+
