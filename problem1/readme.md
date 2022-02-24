@@ -29,10 +29,13 @@ Below are the acceptance criteria :
 Help:
 
 For your convenience, we are giving you a test server which exposes APIs like
+
+```
 /primes
 /fibo
 /odd
 /rand
+```
 
 baseURL: http://localhost:8090
 
