@@ -34,7 +34,7 @@ Please note you can hardcode 20 words in the server for testing.
 
 Test Case 1:
 
-http://localhost:port/numbers?prefixes?keywords=bonfire,bonsai
+http://localhost:port/prefixes?keywords=bonfire,bonsai
 
 Expected Output:
 
