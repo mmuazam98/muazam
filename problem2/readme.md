@@ -1,6 +1,6 @@
 Develop a HTTP microservice called prefix-management-service that exposes a GET REST API "/prefixes". This API receives a query parameter. This query param is called "keywords".
 
-http://yourappserver:port/prefixes?keywords=bonfire,bool
+http://localhost:port/prefixes?keywords=bonfire,bool
 
 Now, consider we have list of words already present in the server
 
