@@ -31,3 +31,26 @@ Response of above API call would be like this
 ```
 
 Please note you can hardcode 20 words in the server for testing.
+
+Test Case 1:
+
+http://localhost:port/numbers?prefixes?keywords=bonfire,bonsai
+
+Expected Output:
+
+```json
+[
+    {
+        "keyword": "bonfire",
+        "status": "found",
+        "prefix": "bonf"
+    },
+    {
+        "keyword": "bonsai",
+        "status": "found",
+        "prefix": "bons"
+    }
+]
+```
+
+### Please attach a screenshot of Insomnia or Postman making an API call with response body
