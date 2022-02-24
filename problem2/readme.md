@@ -4,7 +4,7 @@ http://yourappserver:port/prefixes?keywords=bonfire,bool
 
 Now, consider we have list of words already present in the server
 
-[bonfire, cardio, case, character]
+[bonfire, cardio, case, character, bonsai]
 
 ```
 Your task is to:
@@ -20,7 +20,7 @@ Response of above API call would be like this
     {
         "keyword": "bonfire",
         "status": "found",
-        "prefix": "bon"
+        "prefix": "bonf"
     },
     {
         "keyword": "bool",
