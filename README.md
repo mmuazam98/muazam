@@ -8,4 +8,4 @@ problem statement for intern selection process
 
 # Problem 2
 
-<img src="./problem1/problem2.png">
+<img src="./problem2/problem2.png">
