@@ -18,6 +18,7 @@ func main() {
 	http.HandleFunc("/odd", handler([]int{1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23}))
 	http.HandleFunc("/rand", handler([]int{5, 17, 3, 19, 76, 24, 1, 5, 10, 34, 8, 27, 7}))
 
+
 	log.Fatal(http.ListenAndServe(*listenAddr, nil))
 }
 
@@ -28,11 +29,11 @@ func handler(numbers []int) func(http.ResponseWriter, *http.Request) {
 
 		time.Sleep(time.Duration(waitPeriod) * time.Millisecond)
 
-		x := rand.Intn(100)
-		if x < 10 {
-			http.Error(w, "service unavailable", http.StatusServiceUnavailable)
-			return
-		}
+		// x := rand.Intn(100)
+		// if x < 10 {
+		// 	http.Error(w, "service unavailable", http.StatusServiceUnavailable)
+		// 	return
+		// }
 
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
@@ -40,3 +41,4 @@ func handler(numbers []int) func(http.ResponseWriter, *http.Request) {
 		json.NewEncoder(w).Encode(map[string]interface{}{"numbers": numbers})
 	}
 }
+
